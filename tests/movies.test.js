@@ -142,6 +142,16 @@ describe("PUT /api/movies/:id", () => {
     expect(movieInDatabase.duration).toStrictEqual(updatedMovie.duration);
   });
 
+  it("should return an error", async () => {
+    const movieWithMissingProps = { title: "Harry Potter" };
+
+    const response = await request(app)
+      .put(`/api/movies/1`)
+      .send(movieWithMissingProps);
+
+    expect(response.status).toEqual(422);
+  });
+
   it("should return no movie", async () => {
     const newMovie = {
       title: "Avatar",

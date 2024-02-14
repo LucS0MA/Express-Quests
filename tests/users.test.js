@@ -142,6 +142,16 @@ describe("PUT /api/users/:id", () => {
     expect(userInDatabase.language).toStrictEqual(updatedUser.language);
   });
 
+  it("should return an error", async () => {
+    const userWithMissingProps = { firstname: "Bob" };
+
+    const response = await request(app)
+      .put(`/api/users/1`)
+      .send(userWithMissingProps);
+
+    expect(response.status).toEqual(422);
+  });
+
   it("should return no user", async () => {
     const newUser = {
       firstname: "Gean",
