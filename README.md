@@ -8,4 +8,4 @@
 <!--
 ![Texte alternatif](./assets/exp03final.JPG) -->
 
-![Texte alternatif](./assets/exp03.1.JPG)
+![Texte alternatif](./assets/test03.1.JPG)
