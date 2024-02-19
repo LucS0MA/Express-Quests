@@ -13,5 +13,9 @@
 ![Texte alternatif](./assets/04exp.JPG)
 ![Texte alternatif](./assets/04exp1.JPG)
 ![Texte alternatif](./assets/04exp2.JPG) -->
+<!--
+![Texte alternatif](./assets/test04.JPG) -->
 
-![Texte alternatif](./assets/test04.JPG)
+![Texte alternatif](./assets/getdetails.JPG)
+![Texte alternatif](./assets/1exemple.JPG)
+![Texte alternatif](./assets/2exemple.JPG)
